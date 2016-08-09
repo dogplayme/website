@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>snake</title>
+	<link rel="stylesheet" href="../../demo/snake/snake-d008539b7f.min.css">
+</head>
+<body>
+	<div class="setting">
+		<div class="radios">遇墙
+			<input type="radio" name="isWallExisted" value=0  />穿墙
+			<input type="radio" name="isWallExisted" value=1 checked="checked" />撞墙
+		</div>
+		<div class="radios">食物
+			<input type="radio" name="isFoodChangeable" value=0  />正常
+			<input type="radio" name="isFoodChangeable" value=1 checked="checked" />变动
+		</div>
+		<div class="radios">速度
+			<input type="radio" name="speed" value=40  />快
+			<input type="radio" name="speed" value=30 checked="checked" />更快
+		</div>
+		<div >
+			<input id="go" type="button" value="GO" />
+		</div>
+	</div>
+	<div class="snake">
+		<span>Score&nbsp;</span><span id="score"></span>
+		<span>&nbsp;&nbsp;&nbsp;PastHightestScore&nbsp;</span><span id="highestScore"></span>
+		<canvas id="drawing" width=600 height=600 bgcolor=white></canvas>
+	</div>
+	
+
+	<script src="../../demo/snake/snake-5aecf6cd7e.min.js"></script>
+</body>
+</html>

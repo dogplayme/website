@@ -1,0 +1,69 @@
+@import "compass";
+
+*{
+	padding: 0;
+	margin: 0;
+}
+
+body{
+	.setting{
+		width: 150px;
+		height: 160px;
+		position: absolute;
+		margin: auto;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 10;
+		background-color: white;
+		border: 2px solid black;
+		padding: 20px 20px;
+		.radios{
+			margin: 20px 0;
+			width: 150px;
+			font-size: 16px;
+		}
+		#go{
+			width: 150px;
+			height: 30px;
+		}
+	}
+	.snake{
+		width: 600px;
+		height: 600px;
+		position: absolute;
+		margin: auto;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		#score, #highestScore{
+			text-align: center;
+			font-size: 25px;
+			font-weight: bold;
+		}
+		#drawing{
+			width: 600px;
+			height: 600px;
+			margin: 10px auto;
+
+		}
+	}
+	.again{
+		width: 150px;
+		height: 30px;
+		position: absolute;
+		margin: auto;
+		left: 0;
+		right: 0;
+		top: 0;
+		bottom: 0;
+		z-index: 10;
+		visibility: hidden;
+		#go{
+			width: 150px;
+			height: 30px;
+		}
+	}
+}

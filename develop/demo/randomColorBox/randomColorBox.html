@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>randomColorBox</title>
+	<link rel="stylesheet" href="../../demo/randomColorBox/randomColorBox.min.css">
+</head>
+<body>
+	<div class="container"></div>
+	<div class="settingIco">
+		<svg viewBox="0 0 16 16">
+			<use xlink:href="../../lib/ico.min.svg#ico-setting"></use>
+		</svg>
+	</div>
+	<div class="setting">
+		<div>颜色种类
+			<select id="kind">
+				<option value="less">少</option>
+				<option value="more">多</option>
+			</select>
+		</div>
+		<div>颜色模式
+			<select id="mode">
+				<option value="color">彩色</option>
+				<option value="gray">灰度</option>
+			</select>
+		</div>
+		<div>透明度 <input id="opacity" value=0.1 />
+			<br />(0 =< opacity <= 1)
+		</div>
+		<div>
+			<button id="submit" name="submit">提交</button>
+		</div>
+	</div>
+
+	
+	<script src="http://cdn.bootcss.com/jquery/3.0.0/jquery.min.js"></script>
+	<script src="../../demo/randomColorBox/randomColorBox.min.js"></script>
+</body>
+</html>

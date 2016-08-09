@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>fromPicToBoxShadowPic</title>
+	<link type="text/css" rel="stylesheet" href="../../demo/fromPicToBoxShadowPic/fromPicToBoxShadowPic.min.css" />
+	
+</head>
+<body>
+	
+
+
+	<img id="before" src="../../lib/pic/demo/fromPicToBoxShadowPic/pika.min.png"/>
+	<div id="afterParent">
+		<div id="after" > </div>
+	</div>
+
+
+	<div class="settingIco">
+		<svg viewBox="0 0 16 16">
+			<use xlink:href="../../lib/ico.min.svg#ico-setting"></use>
+		</svg>
+	</div>
+
+	<div class="setting">
+
+		<img id="displayImage" src="../../lib/pic/demo/fromPicToBoxShadowPic/pika.min.png"/>
+		<div>图片
+			<select id="selectPic">
+				<option value="../../lib/pic/demo/fromPicToBoxShadowPic/pika.min.png">皮卡丘</option>
+				<option value="../../lib/pic/demo/fromPicToBoxShadowPic/dog.min.png">风速狗</option>
+				<option value="../../lib/pic/demo/fromPicToBoxShadowPic/mewtwo.min.png">超梦</option>
+				<option value="../../lib/pic/demo/fromPicToBoxShadowPic/ninetales.min.png">九尾</option>
+				<option value="../../lib/pic/demo/fromPicToBoxShadowPic/poilwrath.min.png">快泳蛙</option>
+			</select>
+		</div>
+		<div>原图</div>
+		<div>&nbsp;宽度&nbsp;&nbsp;<span id="beforeWidth"></span> px</div>
+		<div>&nbsp;高度&nbsp;&nbsp;<span id="beforeHeight"></span> px</div>
+		<div>生成图</div>
+		<div>&nbsp;<input name="scale" id="scale" type="checkbox" checked="checked" />按原图比例缩放</div>
+		<div>&nbsp;横向像素块数&nbsp;&nbsp;&nbsp;<input name="afterWidth" id="afterWidth" type="text" value=50 />个</div>
+		<div>&nbsp;纵向像素块数&nbsp;&nbsp;&nbsp;<input name="afterHeight" id="afterHeight" type="text" value=50 />个</div>
+		<div>&nbsp;单个像素块边长&nbsp;&nbsp;<input name="afterSideLength" id="afterSideLength" type="text" value=12 /> px</div>
+		<div><button id="submit" name="submit">提交</button></div>
+	</div>
+
+
+
+	
+	<script src="../../demo/fromPicToBoxShadowPic/fromPicToBoxShadowPic.min.js"></script>
+</body>
+</html>
